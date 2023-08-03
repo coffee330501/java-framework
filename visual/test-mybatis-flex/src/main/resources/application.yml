@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_mybatis_flex
+    username: root
+    password: root
+
+mybatis-flex:
+  mapper-locations:
+    - classpath*:/mapper/*.xml
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql

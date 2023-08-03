@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.github.coffee330501.testMybatisFlex.mapper.UserMapper">
+    <select id="page" resultType="io.github.coffee330501.testMybatisFlex.entity.User">
+        SELECT * FROM user WHERE delete_time IS NULL limit ${pageOffset}, ${pageSize}
+    </select>
+
+    <select id="page_COUNT" resultType="long">
+        SELECT count(id) FROM user WHERE delete_time IS NULL
+    </select>
+</mapper>
