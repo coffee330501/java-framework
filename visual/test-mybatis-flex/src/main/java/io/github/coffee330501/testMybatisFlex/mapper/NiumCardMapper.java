@@ -1,7 +1,7 @@
 package io.github.coffee330501.testMybatisFlex.mapper;
 
 import com.mybatisflex.core.BaseMapper;
-import io.github.coffee330501.testMybatisFlex.entity.NiumCard;
+import io.github.coffee330501.testMybatisFlex.domain.entity.NiumCard;
 
 /**
  *  映射层。

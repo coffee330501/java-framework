@@ -2,7 +2,7 @@ package io.github.coffee330501.testMybatisFlex.mapper;
 
 import com.mybatisflex.core.BaseMapper;
 import com.mybatisflex.core.paginate.Page;
-import io.github.coffee330501.testMybatisFlex.entity.User;
+import io.github.coffee330501.testMybatisFlex.domain.entity.User;
 
 /**
  * 用户表 映射层。

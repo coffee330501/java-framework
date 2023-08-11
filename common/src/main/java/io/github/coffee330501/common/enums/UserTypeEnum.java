@@ -1,15 +1,15 @@
-package io.github.coffee330501.testMybatisFlex.enums;
+package io.github.coffee330501.common.enums;
 
 import com.mybatisflex.annotation.EnumValue;
 
-public enum UserTypeEnum {
+public enum UserTypeEnum implements IEnum<String> {
     TerminalNode(1, "门店"),
     Pedlar(2, "运力"),
     Recovery(3, "回收公司"),
     ;
     @EnumValue
-    private int code;
-    private String desc;
+    private final int code;
+    private final String desc;
 
     UserTypeEnum(int code, String desc) {
         this.code = code;
@@ -24,4 +24,8 @@ public enum UserTypeEnum {
         return desc;
     }
 
+    @Override
+    public String getValue() {
+        return getDesc();
+    }
 }

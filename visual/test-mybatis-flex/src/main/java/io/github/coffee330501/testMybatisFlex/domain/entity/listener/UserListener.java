@@ -1,4 +1,4 @@
-package io.github.coffee330501.testMybatisFlex.entity.listener;
+package io.github.coffee330501.testMybatisFlex.domain.entity.listener;
 
 import com.mybatisflex.annotation.SetListener;
 

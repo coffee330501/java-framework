@@ -1,7 +1,7 @@
 package io.github.coffee330501.testMybatisFlex.service.impl;
 
 import com.mybatisflex.spring.service.impl.ServiceImpl;
-import io.github.coffee330501.testMybatisFlex.entity.User;
+import io.github.coffee330501.testMybatisFlex.domain.entity.User;
 import io.github.coffee330501.testMybatisFlex.mapper.UserMapper;
 import io.github.coffee330501.testMybatisFlex.service.UserService;
 import org.springframework.stereotype.Service;

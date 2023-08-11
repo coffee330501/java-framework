@@ -20,7 +20,7 @@ public class Codegen {
 
         // 如果要使用枚举，就要维护代码生成器
         enumTypeHandler
-                .add("user", "type", "io.github.coffee330501.testMybatisFlex.enums.UserTypeEnum");
+                .add("user", "type", "io.github.coffee330501.common.enums.UserTypeEnum");
         generate(database, ipAndPort, username, password);
     }
 
@@ -30,10 +30,11 @@ public class Codegen {
     public static GlobalConfig createGlobalConfig(String database) {
         // 设置根包
         String sourceDir = System.getProperty("user.dir") + "/visual/test-mybatis-flex/src/main/java";
+        String basePackage = "io.github.coffee330501.testMybatisFlex";
         globalConfig
                 .getPackageConfig()
                 .setSourceDir(sourceDir)
-                .setBasePackage("io.github.coffee330501.testMybatisFlex");
+                .setBasePackage(basePackage);
 
         // 设置生成mapper/service/serviceImpl/controller
         globalConfig.setServiceImplGenerateEnable(true);
@@ -41,6 +42,7 @@ public class Codegen {
         globalConfig.setServiceGenerateEnable(true);
         globalConfig.setControllerGenerateEnable(true);
         globalConfig.setEntityGenerateEnable(true);
+        globalConfig.setEntityPackage(basePackage + ".domain.entity");
 
         // 允许覆盖
         globalConfig.setEntityOverwriteEnable(true);

@@ -1,7 +1,7 @@
 package io.github.coffee330501.testMybatisFlex.service;
 
 import com.mybatisflex.core.service.IService;
-import io.github.coffee330501.testMybatisFlex.entity.User;
+import io.github.coffee330501.testMybatisFlex.domain.entity.User;
 
 /**
  * 用户表 服务层。

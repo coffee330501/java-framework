@@ -2,8 +2,8 @@ package io.github.coffee330501.testMybatisFlex;
 
 import com.alibaba.fastjson2.JSONObject;
 import io.github.coffee330501.common.util.RedisUtil;
-import io.github.coffee330501.testMybatisFlex.entity.User;
-import io.github.coffee330501.testMybatisFlex.enums.UserTypeEnum;
+import io.github.coffee330501.testMybatisFlex.domain.entity.User;
+import io.github.coffee330501.common.enums.UserTypeEnum;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

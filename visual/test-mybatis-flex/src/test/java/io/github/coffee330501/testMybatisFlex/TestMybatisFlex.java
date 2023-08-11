@@ -4,8 +4,8 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.mybatisflex.core.paginate.Page;
 import com.mybatisflex.core.query.QueryWrapper;
-import io.github.coffee330501.testMybatisFlex.entity.User;
-import io.github.coffee330501.testMybatisFlex.enums.UserTypeEnum;
+import io.github.coffee330501.testMybatisFlex.domain.entity.User;
+import io.github.coffee330501.common.enums.UserTypeEnum;
 import io.github.coffee330501.testMybatisFlex.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,8 +15,7 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
-import static io.github.coffee330501.testMybatisFlex.entity.table.UserTableDef.USER;
-
+import static io.github.coffee330501.testMybatisFlex.domain.entity.table.UserTableDef.USER;
 
 @SpringBootTest
 public class TestMybatisFlex {
