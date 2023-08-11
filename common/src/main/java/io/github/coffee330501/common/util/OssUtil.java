@@ -41,12 +41,12 @@ public class OssUtil {
      */
     public static String upload(InputStream inputStream, String dir, String filename) {
         // OSS文件夹不以/开头
-        if (dir.startsWith("/")) dir = dir.replace("/", "");
-
+        if (dir.startsWith("/")) dir = dir.substring(1);
 
         OSS ossClient = OssClient.INSTANCE;
-        ossClient.putObject(ossConfig.getBucket(), filename, inputStream);
-        return filename;
+        String filePath = dir + "/" + filename;
+        ossClient.putObject(ossConfig.getBucket(), filePath, inputStream);
+        return filePath;
     }
 
 

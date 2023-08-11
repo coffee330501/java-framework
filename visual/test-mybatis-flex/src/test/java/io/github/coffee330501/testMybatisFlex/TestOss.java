@@ -13,10 +13,18 @@ import java.io.FileNotFoundException;
 public class TestOss {
     @Resource
     OssConfig ossConfig;
+
     @Test()
-    void test() throws FileNotFoundException {
-        FileInputStream inputStream = new FileInputStream("E:\\WorkSpace\\Coffee\\java-framework\\visual\\test-mybatis-flex\\src\\main\\resources\\application.yml");
-        String filename = OssUtil.upload(inputStream, "yml/application.yml");
+    void upload0() throws FileNotFoundException {
+        FileInputStream inputStream = new FileInputStream("E:\\WorkSpace\\Coffee\\java-framework\\visual\\test-mybatis-flex\\src\\test\\java\\io\\github\\coffee330501\\testMybatisFlex\\TestExcel.java");
+        String filename = OssUtil.upload(inputStream, "test/test.txt");
+        System.out.println(filename);
+    }
+
+    @Test()
+    void upload1() throws FileNotFoundException {
+        FileInputStream inputStream = new FileInputStream("E:\\WorkSpace\\Coffee\\java-framework\\visual\\test-mybatis-flex\\src\\test\\java\\io\\github\\coffee330501\\testMybatisFlex\\TestExcel.java");
+        String filename = OssUtil.upload(inputStream,"/test/b", "test.txt");
         System.out.println(filename);
     }
 }
