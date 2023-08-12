@@ -9,11 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>model</module>
-        <module>visual</module>
-        <module>visual/code-generator</module>
-        <module>visual/test-mybatis-flex</module>
-        <module>common</module>
+        <module>coffee-model</module>
+        <module>coffee-visual</module>
+        <module>coffee-visual/coffee-code-generator</module>
+        <module>test-mybatis-flex</module>
+        <module>coffee-common</module>
     </modules>
 
     <properties>
