@@ -12,7 +12,7 @@
         <module>coffee-model</module>
         <module>coffee-visual</module>
         <module>coffee-visual/coffee-code-generator</module>
-        <module>test-mybatis-flex</module>
+        <module>demo</module>
         <module>coffee-common</module>
     </modules>
 

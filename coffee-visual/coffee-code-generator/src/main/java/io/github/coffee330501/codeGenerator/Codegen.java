@@ -14,7 +14,7 @@ public class Codegen {
     static EnumTypeHandler enumTypeHandler = new EnumTypeHandler();
 
     public static void main(String[] args) {
-        final String database = "test_mybatis_flex";
+        final String database = "java_framework";
         final String ipAndPort = "127.0.0.1:3306";
         final String username = "root";
         final String password = "root";
